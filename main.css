@@ -13,7 +13,7 @@
 }
 @font-face {
     font-family: 'romek-big';
-    src: url(XPtB-g4g.woff2);
+    src: url(KMR-Apparat-Medium.woff);
 }
 h1 {
     font-family: apparat, Helvetica, sans-serif;
@@ -25,8 +25,7 @@ h2 {
 }
 h3 {
     font-family: romek-big, 'Times New Roman', Times, serif;
-    font-size: 2.2rem;
-    text-align: center;
+    font-size: 2rem;
 }
 
 /* _________ */
@@ -36,19 +35,19 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 1rem;
-    margin-top: 0.8rem;
+    padding-top: 0.2rem;
     text-align: center;
     transition: width 0.3s;
+    margin-bottom: 5rem;
 }
 .logo {
-    margin-top: 0.2rem;
-    height: 3rem;
+    height: 4rem;
 }
 .fixed {
-    width: 6rem;
-    top: 0; 
-    left: 0; 
-    z-index: 1000; 
+    margin-left:auto;
+    width: 13rem;
+    top: 0.5rem; 
+    z-index: 1000;
 }
 
 .content img{
@@ -57,12 +56,13 @@ header {
     margin-right: auto;
     border-radius: 1rem;
 }
-.content h3 {
+.article {
     margin-bottom: 3rem;
+    margin-left: 1rem;
 }
 .type1 {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .type1 img {
     width: 65vw;
@@ -76,27 +76,25 @@ header {
 }
 
 footer {
-    background-color: white;
-    display:flex;
-    position: fixed;
-    justify-content:center;
-    align-items:flex-end;
-    text-align: left;
-    width: 99.4vw;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
     z-index: 1000;
-    bottom: 0;
-}
-footer h1 {
-    margin-left: 5vw;
-    margin-right: 5vw;
+    top: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: double;
+    border-color: rgb(212, 212, 212);
+    margin-bottom: 5rem;
 }
 
 /* _________ */
 
-header img, h1:hover {
+header img, footer .hover-footer:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-.content img, h1:hover {
+.content img, content h3:hover {
     cursor: pointer;
 } 

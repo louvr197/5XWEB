@@ -9,36 +9,36 @@
     <body>
         <header>
             <img class="logo" style="margin-right: auto;" src="GFichier 14.svg">
-            <img class="logo" style="margin: auto;" src="G+Fichier 15.svg">
+            <img class="logo" style="margin: auto;" src="G+Fichier 19.svg">
             <img class="logo" style="margin-left:auto;" src="G+BFichier 16.svg">
         </header>
-
+        <footer>
+            <h1>•</h1>
+            <h1 class="hover-footer">ARTICLES</h1>
+            <h1>•</h1>
+            <h1 class="hover-footer">TESTEUR DE LOGICIEL</h1>
+            <h1>•</h1>
+            <h1 class="hover-footer">TEMPLATE WEB</h1>
+            <h1>•</h1>
+        </footer>
         <div class="content">
-            <div class="type1">            
-                <img src="test.jpeg">
-                <h3>Testeur de logiciel</h3>
+            <div class="type1">
+                <div class="article">
+                    <h3>Testeur de Logiciel</h3>   
+                    <img src="test.jpeg">
+                </div>
             </div>
             <div class="type2">
                 <div class="article">
+                    <h3>TEMPLATE WEB</h3>
                     <img src="test.jpeg">
-                    <h3>Template web</h3>
                 </div>
                 <div class="article">
+                    <h3>SERVEUR WEB</h3>
                     <img src="test.jpeg">
-                    <h3>Template web</h3>
                 </div>
             </div>
         </div>
-
-        <footer>
-            <h1>•</h1>
-            <h1>ARTICLES</h1>
-            <h1>•</h1>
-            <h1>TESTEUR DE LOGICIEL</h1>
-            <h1>•</h1>
-            <h1>TEMPLATE WEB</h1>
-            <h1>•</h1>
-        </footer>
     </body>
 </html>
 <script>
@@ -49,7 +49,7 @@ function makeHeaderFixedOnScroll() {
 
     // Function to toggle fixed class based on scroll position
     const toggleHeaderPosition = () => {
-        if (window.scrollY > 10) {
+        if (window.scrollY > 150) {
             header.classList.add(stickyClass);
         } else {
             header.classList.remove(stickyClass);
