@@ -13,19 +13,17 @@
             <img class="logo" style="margin-left:auto;" src="G+BFichier 16.svg">
         </header>
         <footer>
-            <h1>•</h1>
-            <h1 class="hover-footer">ARTICLES</h1>
-            <h1>•</h1>
-            <h1 class="hover-footer">TESTEUR DE LOGICIEL</h1>
-            <h1>•</h1>
-            <h1 class="hover-footer">TEMPLATE WEB</h1>
-            <h1>•</h1>
+            <div class="footer-container">
+                <img src="burgFichier 24.svg">
+                <h1>MENU</h1>
+            </div>
         </footer>
+
         <div class="content">
             <div class="type1">
                 <div class="article">
-                    <h3>Testeur de Logiciel</h3>   
-                    <img src="test.jpeg">
+                    <h3>TESTEUR DE LOGICIEL</h3>   
+                    <img src="test2.jpeg">
                 </div>
             </div>
             <div class="type2">
@@ -49,7 +47,7 @@ function makeHeaderFixedOnScroll() {
 
     // Function to toggle fixed class based on scroll position
     const toggleHeaderPosition = () => {
-        if (window.scrollY > 150) {
+        if (window.scrollY > 170) {
             header.classList.add(stickyClass);
         } else {
             header.classList.remove(stickyClass);
