@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gaussian Blurb</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="mini.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <img class="logo" style="margin-right: auto;" src="GFichier 14.svg">
+            <img class="logo" style="margin: auto;" src="gb-longFichier 33.svg">
+            <img class="logo" style="margin-left:auto;" src="G+BFichier 16.svg">
+        </header>
+        <footer>
+            <div class="footer-container">
+                <img src="burgFichier 24.svg">
+                <h2>MENU</h2>
+            </div>
+        </footer>
+
+        <div class="content">
+            
+        </div>
+    </body>
+</html>
+<script>
+
+function makeHeaderFixedOnScroll() {
+    const header = document.querySelector('header');
+    const stickyClass = 'fixed'; // Class to apply for fixed positioning
+
+    // Function to toggle fixed class based on scroll position
+    const toggleHeaderPosition = () => {
+        if (window.scrollY > 195) {
+            header.classList.add(stickyClass);
+        } else {
+            header.classList.remove(stickyClass);
+        }
+    };
+
+    // Initial check
+    toggleHeaderPosition();
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', toggleHeaderPosition);
+}
+
+    // Call the function when the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', makeHeaderFixedOnScroll);
+
+</script>

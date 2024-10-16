@@ -77,8 +77,8 @@ footer img {
 
 .content img{
     display: grid;
-    border-radius: 0.5rem;
-    max-width: 100%; 
+    border-radius: 0.4rem;
+    max-width: 100%;
     transition: scale 0.08s ease-in-out;
 }
 .article p {
@@ -98,7 +98,8 @@ footer img {
     margin-left: 6rem;
 }
 .type2 .article {
-    grid-template-areas: 'h3-txt h3-txt''img img''p-txt p-txt';    
+    grid-template-areas: 'h3-txt h3-txt''img img''p-txt p-txt';
+    height: max-content;
 }
 .type1 {
     display: grid;
@@ -106,6 +107,9 @@ footer img {
     border-top: 5px;
     border-style: double;
     padding-right: 6rem;
+}
+.type1 img {
+    margin-right: 20rem;
 }
 .type1 p {
     padding-left: 4rem;
@@ -118,7 +122,16 @@ footer img {
     border-top: 2px;    
     border-style: solid;
 }
-
+.type2 .article{
+    margin: 0;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 1rem;
+    
+    border: 0;
+    border-left: 2px;    
+    border-style: solid;
+}
 
 /* _________ */
 
@@ -147,8 +160,6 @@ footer img {
         padding-left: 2rem;
         padding-right: 1rem;
     }
-}
-@media screen and (max-width: 900px) {
     .type2 {
         grid-template-columns: 1fr;
         border: 0;
