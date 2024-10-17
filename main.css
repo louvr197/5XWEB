@@ -147,6 +147,8 @@ footer img {
     cursor: pointer
 }
 
+/* _________ */
+
 @media screen and (max-width: 1300px) {
     .article {
         grid-template-areas: 'h3-txt h3-txt''img img''p-txt p-txt'; 
@@ -162,11 +164,35 @@ footer img {
     }
     .type2 {
         grid-template-columns: 1fr;
-        border: 0;
     }
     .type2 .article {
         border: 0;
         border-top: 2px;    
         border-style: solid;
     }
+}
+
+/* _________ */
+
+.inside{
+    display: grid;
+    border: 0;
+    border-top: 5px;
+    border-style: double;
+
+    padding-top: 3rem;
+}
+.inside p{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+.inside h3, p{
+    max-width: 65rem;
+    margin: auto;
+}
+.inside img{
+    max-width: 65rem;
+    margin-top: 10rem;
+    margin: auto;
 }
