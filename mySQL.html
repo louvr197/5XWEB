@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Testeur de Logiciel</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="mini.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <img class="logo" style="margin-right: auto;" src="logoG.svg">
+            <img class="logo" style="margin: auto;" src="logoLOGO.svg">
+            <img class="logo" style="margin-left:auto;" src="logoB.svg  ">
+        </header>
+        <footer>
+            <div class="footer-container">
+                <img src="burgFichier 24.svg">
+                <h2>MENU</h2>
+            </div>
+        </footer>
+
+        <div class="content">
+            <div class="inside">
+                <h3>MySQL</h3>   
+                <p>
+                    Prononcé “M-aïe es-ku-elle" en français et “M-aïe sikwel” à l’internationale, MySQL est la base de données Open-source la plus utilisée. MySQL est développée par Oracle
+                </p>
+                <p>
+                    Une base de données est un ensemble structuré d’informations organisées pour être facilement accessibles, gérées et mises à jour. MySQL utilise un modèle de base de données relationnelle. C’est à dire que les données sont enregistrées dans des tables distinctes contenant des données similaires et leurs relations avec des données dans d’autres tables. Ces relations peuvent lier des entrées selon des critères différents selon les besoins.
+                </p><p>
+                    Le stockage de ces tables dans des fichiers physiques différents plutôt que dans un unique grand fichier permets une optimisation impossible dans d’autres modèles de base de données.
+
+
+                </p><p>
+                    Le SQL de MySQL signifie “structured query language” (langage de requêtes structurées). Le SQL est le langage standard le plus utilisé pour gérer les accès aux bases de données. 
+                </p><p>
+                    MySQL étant open-source, le programme et son code peuvent être obtenu gratuitement et modifié par les utilisateurs sous licence GNU GPL. Une License commerciale est également disponible si elle correspond mieux aux besoins de l’utilisateur.
+                </p><p>
+                    Cet état de logiciel open-source a fait qu'au cours de son existence MySQL a été rendu compatible avec la plupart des langages informatiques.
+                </p>
+                <img src="sql.jpg">
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+
+function makeHeaderFixedOnScroll() {
+    const header = document.querySelector('header');
+    const stickyClass = 'fixed'; // Class to apply for fixed positioning
+
+    // Function to toggle fixed class based on scroll position
+    const toggleHeaderPosition = () => {
+        if (window.scrollY > 195) {
+            header.classList.add(stickyClass);
+        } else {
+            header.classList.remove(stickyClass);
+        }
+    };
+
+    // Initial check
+    toggleHeaderPosition();
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', toggleHeaderPosition);
+}
+
+    // Call the function when the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', makeHeaderFixedOnScroll);
+
+</script>
