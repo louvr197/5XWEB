@@ -154,6 +154,16 @@ footer img {
     border-left: 2px;    
     border-style: solid;
 }
+.sources p{
+    text-align: center;
+    color: rgb(69, 126, 161);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.sources h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
 /* _________ */
 
 .article:hover {
