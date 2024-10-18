@@ -7,11 +7,11 @@
         <link rel="icon" href="mini.ico" type="image/x-icon">
     </head>
     <body>
-        <header>
+        <a href="./index.html" class="header">
             <img class="logo" style="margin-right: auto;" src="logoG.svg">
             <img class="logo" style="margin: auto;" src="logoLOGO.svg">
-            <img class="logo" style="margin-left:auto;" src="logoB.svg  ">
-        </header>
+            <img class="logo" style="margin-left:auto;" src="logoB.svg">
+        </a>
         <footer>
             <div class="footer-container">
                 <img src="burgFichier 24.svg">
@@ -37,10 +37,10 @@
             </p><p><br>
                 Cet état de logiciel open-source a fait qu'au cours de son existence MySQL a été rendu compatible avec la plupart des langages informatiques.
             </p>
-
-            <p>
+            <div class="sources">
+            <h2><br>
                 sources:
-            </p>
+            </h2>
             <p><a href="https://fr.wikipedia.org/wiki/MySQL">fr.wikipedia.org</a>
             </p><p>
                 <a href="https://en.wikipedia.org/wiki/MySQL"> en.wikipedia.org</a>
@@ -50,13 +50,14 @@
             <p>
                 <a href="https://www.oracle.com/ca-fr/mysql/what-is-mysql/"> oracle.com</a></p>        
             </div>
+            </div>
         </div>
     </body>
 </html>
 <script>
 
 function makeHeaderFixedOnScroll() {
-    const header = document.querySelector('header');
+    const header = document.querySelector('.header');
     const stickyClass = 'fixed'; // Class to apply for fixed positioning
 
     // Function to toggle fixed class based on scroll position
