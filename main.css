@@ -32,7 +32,7 @@ h3 {
 /* _________ */
 
 .logo {
-    height: 5rem;
+    height: 6rem;
 }
 .fixed {
     margin-left:auto;
@@ -42,8 +42,8 @@ h3 {
     z-index: 1000;
 }
 .fixed img {
-    transform: translateY(-3rem);
-    padding-top: 3rem;
+    transform: translateY(-5rem);
+    padding-top: 5rem;
     height: 2rem;
 }
 
@@ -185,9 +185,10 @@ footer img {
 .inside p{
     font-size: 1.3rem;
     line-height: 1.5rem;
+    max-width: 65rem;
+    margin: auto;
 }
-
-.inside h3, p{
+.inside h3{
     max-width: 65rem;
     margin: auto;
 }
