@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Template Web</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="mini.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <img class="logo" style="margin-right: auto;" src="logoG.svg">
+            <img class="logo" style="margin: auto;" src="logoLOGO.svg">
+            <img class="logo" style="margin-left:auto;" src="logoB.svg  ">
+        </header>
+        <footer>
+            <div class="footer-container">
+                <img src="burgFichier 24.svg">
+                <h2>MENU</h2>
+            </div>
+        </footer>
+
+        <div class="content">
+            <div class="inside">
+                <h3>NOM DE DOMAINE</h3>   
+                <p>
+                    Tous les serveurs sur internet sont identifiés par une suite de chiffre : leur adresse IP. Malheureusement cela n’est pas très adapté à l’utilisateur humain. C’est pour ça que les propriétaires de site internet vont les associer à des chaines de caractères plus adaptées aux utilisateurs : des noms de domaines. </p>
+                <img src="template web.jpg">
+                <p>
+                    Les noms de domaines sont séparés en plusieurs niveaux séparés par des points. Au plus le niveau est à droite dans la chaîne de caractères, au plus le domaine est générique.</p>
+                 <p>
+                    Pour associer ces adresse IP et leurs noms de domaine, il est nécessaire d’en maintenir une liste de ces noms de domaines. C’est le rôle des registraires de nom de domaine qui les maintiennent sous formes de base de données. Ces listes fonctionnent par niveau avec pour chaque niveau un responsable différent.
+                 </p>
+                 <p>
+                    Le nom de domaine peut être préfixé d’un nom d’utilisateur et d’un mot de passe séparé du nom de domaine par une arobase. Ce qui peut servir à limiter certains accès.
+                 </p>
+                 <p>
+                    Le premier registraire est l’IANA, l’Internet Assigned Numbers Authority. L’IANA a parmi ses fonctions la gestion de la zone racine de système de nom de domaine ou DNS. C’est-à-dire qu’elle possède une liste de tous les noms de domaine de premier niveau et peut donc rediriger les utilisateurs vers les bonnes listes pour trouver le site recherché.
+                 </p><p>
+                    Beaucoup de domaines de premiers niveaux sont associés à des pays. Auquel cas ils sont composés de seulement deux caractères et sont appelés « domaine de premier niveau national ».   </p>
+                 <p>
+                    S’ils sont composés de trois caractères ou plus, il s’agit alors de « domaine de premier niveau générique ».
+
+                 </p>
+                 <p>
+                    Les registraires des noms de domaines de premier niveau établissent leur propre règle pour qu’un site soit éligible à une place sur leurs listes ainsi que leurs politiques de prix.
+                </p><p>
+                    Viennent ensuite les domaines de deuxièmes niveaux. Composés de maximum 63 caractères, ceux-ci sont en général associés directement aux site web. Il reste néanmoins possible de descendre plus bas avec des sous-domaines.    
+                 </p>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+
+function makeHeaderFixedOnScroll() {
+    const header = document.querySelector('header');
+    const stickyClass = 'fixed'; // Class to apply for fixed positioning
+
+    // Function to toggle fixed class based on scroll position
+    const toggleHeaderPosition = () => {
+        if (window.scrollY > 195) {
+            header.classList.add(stickyClass);
+        } else {
+            header.classList.remove(stickyClass);
+        }
+    };
+
+    // Initial check
+    toggleHeaderPosition();
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', toggleHeaderPosition);
+}
+
+    // Call the function when the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', makeHeaderFixedOnScroll);
+
+</script>

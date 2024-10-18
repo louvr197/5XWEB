@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Template Web</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="mini.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <img class="logo" style="margin-right: auto;" src="logoG.svg">
+            <img class="logo" style="margin: auto;" src="logoLOGO.svg">
+            <img class="logo" style="margin-left:auto;" src="logoB.svg  ">
+        </header>
+        <footer>
+            <div class="footer-container">
+                <img src="burgFichier 24.svg">
+                <h2>MENU</h2>
+            </div>
+        </footer>
+
+        <div class="content">
+            <div class="inside">
+                <h3>GRABBING</h3>   
+                <p>
+                    Le « banner grabbing » désigne l’obtention des bannières des ports ouvert d’un ordinateur. Ces bannières sont des métadonnées que les ports ouverts fournissent quand une requête de connexion est lancée et contiennent le nom et la version du software qui maintient ce port.
+                </p>
+                    <img src="template web.jpg">
+               <p>
+                Les pirates vont obtenir ces bannières manuellement ou avec des outils d’automatisation pour repérer les ports utilisant des softwares ayant des failles connues qu’ils pourraient utiliser pour infiltrer le système.
+               </p>
+               <p>
+                Il existe deux techniques principales de « Banner Grabbing ». La manière active et la manière passive. Le banner grabbing actif consiste à contacter directement les ports au risque d’être détecté. Le banner grabbing passif, plus compliqué, vise à intercepter et observer le trafic de ces ports pour obtenir les mêmes données.
+               </p>
+               <p>
+                Pour se protéger du banner grabbing, il est conseillé de réduire les ports ouverts sur ses machines en fermant les ports inutiles et inutilisé, restreindre les accès au réseau et maintenir les systèmes à jours pour s’assurer que les failles connues soient fermées au plus vite. Il est aussi possible de personnaliser les bannières pour en retirer les informations utiles aux pirates.
+               </p>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+
+function makeHeaderFixedOnScroll() {
+    const header = document.querySelector('header');
+    const stickyClass = 'fixed'; // Class to apply for fixed positioning
+
+    // Function to toggle fixed class based on scroll position
+    const toggleHeaderPosition = () => {
+        if (window.scrollY > 195) {
+            header.classList.add(stickyClass);
+        } else {
+            header.classList.remove(stickyClass);
+        }
+    };
+
+    // Initial check
+    toggleHeaderPosition();
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', toggleHeaderPosition);
+}
+
+    // Call the function when the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', makeHeaderFixedOnScroll);
+
+</script>
