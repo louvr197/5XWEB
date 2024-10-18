@@ -7,11 +7,11 @@
         <link rel="icon" href="mini.ico" type="image/x-icon">
     </head>
     <body>
-        <header>
+        <a class="header">
             <img class="logo" style="margin-right: auto;" src="logoG.svg">
             <img class="logo" style="margin: auto;" src="logoLOGO.svg">
             <img class="logo" style="margin-left:auto;" src="logoB.svg  ">
-        </header>
+        </a>
         <footer>
             <div class="footer-container">
                 <img src="burgFichier 24.svg">
@@ -28,19 +28,21 @@
                 </p>
                 <img src="open source.jpg">
                 <p>
-                    <br>
+                    <br><br>
                     Les requêtes sont généralement des demandes pour des ressources stockées sur la machine serveur comme des pages web, des images, des vidéos ou d’autres documents, voire même des logiciels. 
                     <br><br>
                     Ces ressources peuvent être envoyée tel quelles auxquels cas ont les considèrent comme statiques ou construite au cas par cas par le serveur. On les considère alors comme des ressources dynamiques.                      <br><br>
                 </p>
-                <p>
+                <div class="sources">
+                <h2>
                     sources:
-                </p>
+                </h2>
                 <p><a href="https://fr.wikipedia.org/wiki/Serveur_web">fr.wikipedia.org</a>
                 </p><p>
                     <a href="https://www.lemagit.fr/definition/Serveur-Web
                     "> lemagit.fr</a> 
                 </p>
+                </div>
             </div>
         </div>
     </body>
@@ -48,7 +50,7 @@
 <script>
 
 function makeHeaderFixedOnScroll() {
-    const header = document.querySelector('header');
+    const header = document.querySelector('.header');
     const stickyClass = 'fixed'; // Class to apply for fixed positioning
 
     // Function to toggle fixed class based on scroll position
