@@ -135,7 +135,25 @@ footer img {
     border-left: 2px;    
     border-style: solid;
 }
+.type3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
+    border: 0;
+    border-top: 2px;    
+    border-style: solid;
+}
+.type3 .article{
+    display: block;
+    margin: 0;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 1rem;
+    
+    border: 0;
+    border-left: 2px;    
+    border-style: solid;
+}
 /* _________ */
 
 .article:hover {
@@ -169,6 +187,15 @@ footer img {
         grid-template-columns: 1fr;
     }
     .type2 .article {
+        border: 0;
+        border-top: 2px;    
+        border-style: solid;
+    }
+    .type3 {
+        grid-template-columns: 1fr;
+        border: 0;
+    }
+    .type3 .article {
         border: 0;
         border-top: 2px;    
         border-style: solid;
