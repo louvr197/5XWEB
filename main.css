@@ -28,6 +28,9 @@ h3 {
     font-family: glecb, 'Times New Roman', Times, serif;
     font-size: 5rem;
 }
+a {
+    all: unset;
+}
 
 /* _________ */
 
